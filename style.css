@@ -1,0 +1,126 @@
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#listOfATMs {
+    height: auto;
+    overflow:default;
+}
+
+#listOfATMs ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#listOfATMs ul li {
+    font-family: sans-serif;
+    background-color: #4286f4;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+       
+    #listOfATMs {
+        height: 420px;
+        overflow: scroll;
+    }
+    
+    #listOfATMs::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    #listOfATMs::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        border-radius: 10px;
+    }
+    
+    #listOfATMs::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+    
+}
+
+header img {
+    width: 150px;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {left:0px; top:0px;}
+    50%  {left:200px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    50%  {left:200px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+header h1 {
+    margin-top: 20px;
+    color: #01B8F2;
+    text-shadow: 3px 3px #242424;
+}
+
+header {
+    background-color: #1d4b93;
+    margin-bottom: 40px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    background-color: #1d4b93;
+}
+
+footer nav a {
+    color: #FFFFFF;
+}
+
+footer nav a:hover{
+    color: gray;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    
+}
+
+footer ul li a:hover {
+	color: gray;
+}
+
+.fa {
+    -webkit-box-shadow: -1px 1px 3px 5px rgba(0,0,0,0.75);
+ -moz-box-shadow: -1px 1px 3px 5px rgba(0,0,0,0.75);
+ box-shadow: -1px 1px 3px 5px rgba(0,0,0,0.75);
+    background-color: #4286f4;
+    border-radius: 3px; 
+    width: 100px;
+    color: #FFFFFF;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 7px 2px;
+}

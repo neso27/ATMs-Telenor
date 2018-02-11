@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ATMs Nearby</title>
+        
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="shortcut icon" type="image/jpg" href="img/logo_telenor.jpg">
+        
+            
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+    </head>
+    
+    <body>
+        
+        <header>
+            <div class="container">
+                <div class="row">
+                <div class="col-sm-12 col-md-2">
+                    <img src="img/logo_telenor.jpg">
+                </div>
+                <div class="col-sm-12 col-md-10 text-center">
+                    <h1><em>Telenor ATMs</em></h1>
+                </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2>Do you whant to allow geolocation usage?</h2>
+                        <button type="button" class="btn btn-primary" onclick="getLocation()">Yes</button>
+                        <button type="button" class="btn btn-danger" onclick="hideLocation()">No</button>
+                        <p id="demo"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h2>Telenor Google Map</h2>
+                        <div id="map"></div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 text-center">
+                        <h2>ATMs</h2>
+                        <div id="listOfATMs">
+                            <ul>
+                                <li><h3>ATM</h3>Зелени венац, Београд</li>
+                                <li><h3>ATM</h3>Краља Милана 25, Београд 11000</li>
+                                <li><h3>ATM</h3>Краља Милана 50, Београд 11000</li>
+                                <li><h3>ATM</h3>Максима Горког 19, Београд 11000</li>
+                                <li><h3>ATM</h3>Булевар краља Александра 186, Београд 11000</li>
+                                <li><h3>ATM</h3>Миријевски венац 23, Београд 11160</li>
+                                <li><h3>ATM</h3>Заплањска 32, Београд</li>
+                                <li><h3>ATM</h3>Војводе Степе 85, Beograd 162710, Београд 162710</li>
+                                <li><h3>ATM</h3>ulaz iz Bulevara Mihajla Pupina,Стари Меркатор, Палмира Тољатија 7, Београд 11070</li>
+                                <li><h3>ATM</h3>Јурија Гагарина 16, Београд</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+           <div class="container">
+               <div class="row">
+                    <div class="col-6 col-md-3 text-justify">
+                        <h2>Telenor</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ipsum sequi beatae sapiente quasi sed consequatur eveniet a porro voluptas cumque reiciendis facere mollitia, tempore!</p>
+                    </div>
+                    <div class="col-6 col-md-3 text-center">
+                        <img src="img/bank_card.png">
+                    </div>
+                    <div class="col-6 col-md-3 text-center">
+                        <nav class="nav flex-column">
+                          <a class="nav-link active" href="https://www.telenor.com/wp-content/uploads/2014/04/Extract-from-Telenor-Group-Policy-Corporate-Responsibility.pdf" target="_blank">Policies</a>
+                          <a class="nav-link" href="https://www.telenor.com/investors/" target="_blank">Investors</a>
+                          <a class="nav-link" href="https://www.telenor.com/career/" target="_blank">Careers</a>
+                          <a class="nav-link" href="https://www.telenor.com/media/press-release/" target="_blank">Press</a>
+                        </nav> 
+                    </div>
+                    <div class="col-6 col-md-3 text-center">
+                        <ul>
+                            <li><a href="https://sr-rs.facebook.com/TelenorSrbija/" class="fa fa-facebook" target="_blank">&nbsp;Facebook</a></li>
+                            <li><a href="https://twitter.com/telenorsrbija" class="fa fa-twitter" target="_blank">&nbsp;Twitter</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCmY1g9kRX35ttzf71P5RJ3g" class="fa fa-youtube" target="_blank">&nbsp;Youtube</a></li>
+                            <li><a href="https://www.instagram.com/telenorsrbija/?hl=sr" class="fa fa-instagram" target="_blank">&nbsp;Instagram</a></li>
+                        </ul>
+                    </div>
+               </div>
+           </div>
+        </footer>
+        
+        <script src="main.js" type="text/javascript"></script>   
+        
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXRuAcsUcbWhSoDPs4Mn2bSRhOob5DDbg&callback=initMap"
+        type="text/javascript"></script>
+    </body>
+</html>
